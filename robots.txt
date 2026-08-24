@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://formark.github.io/cineuxlab/sitemap.xml
