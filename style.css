@@ -273,6 +273,93 @@ article p {
     font-size: clamp(42px, 6vw, 64px);
 }
 
+/* Scroll reveal */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(6px);
+    transition:
+        opacity .8s cubic-bezier(.16,1,.3,1),
+        transform .8s cubic-bezier(.16,1,.3,1),
+        filter .8s cubic-bezier(.16,1,.3,1);
+}
+
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+
+/* Card hover */
+
+article {
+    transition:
+        transform .35s cubic-bezier(.16,1,.3,1),
+        border-color .35s ease,
+        background .35s ease;
+}
+
+
+article:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,.18);
+}
+
+
+
+/* Moving background light */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 600px;
+    height: 600px;
+
+    top: 10%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(139,92,246,.12),
+            transparent 65%
+        );
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    animation:
+        ambientMove 14s ease-in-out infinite;
+
+}
+
+
+
+@keyframes ambientMove {
+
+    0%,100% {
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateX(-50%)
+            translateY(80px);
+    }
+
+}
+
 /* Footer */
 
 footer {
