@@ -2,35 +2,26 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Movie Discovery UX — CineUX Lab</title>
+<title>Reducing Friction in Movie Discovery — CineUX Lab</title>
 
-<meta name="description" content="A UX case study exploring how movie blogs can reduce decision friction during film discovery.">
-
+<meta name="description" content="A CineUX Lab study of information hierarchy and decision friction in movie discovery interfaces.">
 <meta name="theme-color" content="#08090b">
-
-<meta property="og:title" content="Movie Discovery UX — CineUX Lab">
-
-<meta property="og:description" content="A UX study of film discovery, information hierarchy and decision friction.">
-
+<meta property="og:title" content="Reducing Friction in Movie Discovery">
+<meta property="og:description" content="A UX study of information hierarchy and decision friction in movie discovery.">
 <meta property="og:type" content="article">
-
 <meta property="og:url" content="https://formark.github.io/cineuxlab/case-study.html">
-
 <meta property="og:image" content="https://formark.github.io/cineuxlab/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <header>
-
 <div class="container nav">
 
 <div class="logo">
@@ -40,170 +31,112 @@ Cine<span>UX</span> Lab
 </div>
 
 <nav>
-<a href="index.html">Home</a>
 <a href="research.html">Research</a>
 <a href="about.html">About</a>
 </nav>
 
 </div>
-
 </header>
 
 <main>
 
-<section class="hero small">
+<article class="case-study">
 
-<div class="container">
+<div class="case-header">
 
 <div class="badge">
 Case Study · 001
 </div>
 
 <h1>
-Reducing friction
-<br>
+Reducing friction<br>
 in movie discovery.
 </h1>
 
-<p>
-Exploring how information architecture can help people move from curiosity to a confident movie choice.
+<p class="case-intro">
+How information hierarchy can help people move from curiosity to a confident movie choice.
 </p>
 
+<div class="case-meta">
+
+<div>
+<span>Area</span>
+<strong>Movie discovery</strong>
 </div>
+
+<div>
+<span>Study</span>
+<strong>UX / Information Architecture</strong>
+</div>
+
+<div>
+<span>Status</span>
+<strong>Exploratory</strong>
+</div>
+
+</div>
+
+</div>
+
+<div class="case-content">
+
+<section>
+
+<div class="section-label">01</div>
+
+<h2>The problem</h2>
+
+<p>
+Movie pages tend to accumulate information over time. Ratings, genres, cast, reviews, trailers, recommendations and editorial content all compete for the same attention.
+</p>
+
+<p>
+The result is often a page that is comprehensive, but difficult to scan when someone simply wants to answer one question:
+<strong>“Is this worth watching?”</strong>
+</p>
 
 </section>
 
 <section>
 
-<div class="container">
+<div class="section-label">02</div>
 
-<div class="grid">
+<h2>The hypothesis</h2>
 
-<article>
-<h3>Focus</h3>
-<p>Movie discovery interfaces</p>
-</article>
+<blockquote>
+The first screen should support a decision, not explain the entire movie.
+</blockquote>
 
-<article>
-<h3>Problem</h3>
-<p>Information overload during film selection</p>
-</article>
-
-<article>
-<h3>Goal</h3>
-<p>Make important signals easier to understand</p>
-</article>
-
-</div>
-
-</div>
+<p>
+A useful discovery experience can progressively reveal detail instead of presenting every available signal simultaneously.
+</p>
 
 </section>
 
 <section>
 
-<div class="container">
+<div class="section-label">03</div>
 
-<h2>
-The problem
-</h2>
+<h2>What users need first</h2>
 
-<p class="large">
-Movie pages often contain everything a user could want to know — but not necessarily in the order they need it.
-</p>
+<div class="insight-list">
 
-<p>
-Posters, ratings, genres, reviews, trailers and recommendations compete for attention. The result can be a page that is rich in information but difficult to scan.
-</p>
-
+<div>
+<span>01</span>
+<strong>Context</strong>
+<p>What kind of movie is this?</p>
 </div>
 
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>
-Research questions
-</h2>
-
-<div class="grid">
-
-<article>
-<h3>01</h3>
-<p>
-Which information helps users decide whether a movie is worth exploring?
-</p>
-</article>
-
-<article>
-<h3>02</h3>
-<p>
-How should ratings and reviews fit into the discovery flow?
-</p>
-</article>
-
-<article>
-<h3>03</h3>
-<p>
-What can be removed without reducing confidence?
-</p>
-</article>
-
+<div>
+<span>02</span>
+<strong>Signal</strong>
+<p>Do other people consider it worth watching?</p>
 </div>
 
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>
-Key insight
-</h2>
-
-<p class="large">
-The goal is not to show more information. It is to reveal the right information at the right moment.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2>
-UX principles
-</h2>
-
-<div class="grid">
-
-<article>
-<h3>Hierarchy</h3>
-<p>
-Prioritize the signals users need before secondary metadata.
-</p>
-</article>
-
-<article>
-<h3>Progressive disclosure</h3>
-<p>
-Let deeper information appear when users are ready for it.
-</p>
-</article>
-
-<article>
-<h3>Decision support</h3>
-<p>
-Help users compare options without forcing them to process everything at once.
-</p>
-</article>
-
+<div>
+<span>03</span>
+<strong>Confidence</strong>
+<p>Does it match what I want right now?</p>
 </div>
 
 </div>
@@ -212,34 +145,79 @@ Help users compare options without forcing them to process everything at once.
 
 <section>
 
-<div class="container">
+<div class="section-label">04</div>
 
-<h2>
-Conclusion
-</h2>
-
-<p class="large">
-Good movie discovery UX turns a large amount of content into a clear path toward a decision.
-</p>
+<h2>Design direction</h2>
 
 <p>
-This case study is part of the ongoing CineUX Lab research project.
+Instead of treating every piece of metadata equally, the interface can establish a clear hierarchy:
 </p>
+
+<div class="principle">
+
+<strong>Primary</strong>
+<span>Title, genre, premise, rating</span>
+
+</div>
+
+<div class="principle">
+
+<strong>Secondary</strong>
+<span>Reviews, cast, runtime, release information</span>
+
+</div>
+
+<div class="principle">
+
+<strong>Exploration</strong>
+<span>Similar films, collections and recommendations</span>
 
 </div>
 
 </section>
+
+<section>
+
+<div class="section-label">05</div>
+
+<h2>Key insight</h2>
+
+<p class="statement">
+Good discovery UX doesn't reduce the amount of information.
+<br>
+It reduces the amount of information users have to process <em>at once.</em>
+</p>
+
+</section>
+
+<section>
+
+<div class="section-label">06</div>
+
+<h2>Takeaways</h2>
+
+<ul class="takeaways">
+
+<li>Prioritize decision-critical information.</li>
+<li>Use progressive disclosure for deeper metadata.</li>
+<li>Separate discovery from exploration.</li>
+<li>Let reviews support a decision rather than dominate it.</li>
+
+</ul>
+
+</section>
+
+</div>
+
+</article>
 
 </main>
 
 <footer>
-
 <div class="container">
 © 2026 CineUX Lab
 </div>
-
 </footer>
 
 </body>
-
 </html>
